@@ -7,3 +7,10 @@ myApp.controller('ctrlCatalogo', function($scope, $http){
 		$scope.message ="MENSAJE";
 	});
 });
+
+myApp.controller('ctrlActivities', function ($scope, $http, $routeParams) {
+    $http.get('catalogo.json').success(function (data) {
+		$scope.index = $routeParams.index;
+        $scope.activity = data.catalogo[0].catActividades[$routeParams.index];
+    });
+});

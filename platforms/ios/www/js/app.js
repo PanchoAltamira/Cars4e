@@ -2,12 +2,12 @@ var myApp  =  angular.module('myApp', ['ngRoute'])
 .config(function($routeProvider) {
 $routeProvider
     .when('/', {
-        templateUrl : 'http://localhost/Cars4e/platforms/ios/www/pages/principal.html',
+        templateUrl : 'pages/principal.html',
         controller  : 'ctrlCatalogo'
     })
-     .when('/actividades', {
-        templateUrl : 'http://localhost/Cars4e/platforms/ios/www/pages/actividades.html',
-        controller  : 'ctrlCatalogo'
+     .when('/actividades/:index', {
+        templateUrl : 'pages/actividades.html',
+        controller  : 'ctrlActivities'
     })
     .otherwise({
         redirectTo: 'index.html'
