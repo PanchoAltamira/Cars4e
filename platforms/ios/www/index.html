@@ -12,89 +12,66 @@
         <link rel="import" href="bower_components/core-item/core-item.html">
         <link rel="import" href="bower_components/paper-toast/paper-toast.html">
         <link rel="import" href="bower_components/paper-fab/paper-fab.html">
-       
-        <script type="text/javascript" src="js/index.js"></script>
         <script src="bower_components/angular/angular.js"></script>
-        <script src="js/controllers.js"></script>
+        <script src="bower_components/angular-route/angular-route.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/controllers.js"></script>        
         <script type="text/javascript">
-            app.initialize();
+        app.initialize();
         </script>
-                                            <style>
-                                                html, body {
-                                                    height: 100%;
-                                                    margin: 0;
-                                                }
-                                            body {
-                                                font-family: sans-serif;
-                                            }
-                                            core-scaffold {
-                                                position: absolute;
-                                                top: 0;
-                                                right: 0;
-                                                bottom: 0;
-                                                left: 0;
-                                            }
-                                            #core_toolbar {
-                                                color: rgb(255, 255, 255);
-                                                background-color: #05b5ee;
-                                            }
-                                            #core_card {
-                                                width: 96%;
-                                                height: 300px;
-                                                border-top-left-radius: 2px;
-                                                border-top-right-radius: 2px;
-                                                border-bottom-right-radius: 2px;
-                                                border-bottom-left-radius: 2px;
-                                                box-shadow: rgba(0, 0, 0, 0.0980392) 0px 2px 4px, rgba(0, 0, 0, 0.0980392) 0px 0px 3px;
-                                                margin: 2%;
-                                                background-color: rgb(255, 255, 255);
-                                                text-align: left;
-                                            }
-                                            paper-fab {
-                                                position: absolute;
-                                                right: 20px;
-                                                bottom: 20px;
-                                            }
-                                            </style>
-                                            </head>
+        <style>
+        html, body {
+        height: 100%;
+        margin: 0;
+        }
+        body {
+        font-family: sans-serif;
+        }
+        core-scaffold {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        }
+        #core_toolbar {
+        color: rgb(255, 255, 255);
+        background-color: #05b5ee;
+        }
+        #core_card {
+        width: 96%;
+        height: 300px;
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+        border-bottom-left-radius: 2px;
+        box-shadow: rgba(0, 0, 0, 0.0980392) 0px 2px 4px, rgba(0, 0, 0, 0.0980392) 0px 0px 3px;
+        margin: 2%;
+        background-color: rgb(255, 255, 255);
+        text-align: left;
+        }
+        paper-fab {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        background-color: green;
+        }
+        </style>
+    </head>
     <body ng-app="myApp">
         <core-scaffold>
-            <core-header-panel navigation flex mode="seamed">
-                <core-toolbar id="core_toolbar">Menu</core-toolbar>
-                
-            </core-header-panel>
-            <div tool>Cars 4er</div>
-            <core-card id="core_card" vertical layout start>
-                <div style="padding: 20px;" ng-controller="ctrlCatalogo">
-                        <p>
-                            <label for="conductor"> Conductor: </label>
-                            <select name="conductor" id="conductor" ng-model="conductores">
-                              <option ng-repeat="conductor in catalogo.catalogo[0].catConductores" value="{{conductor.id}}">
-                                {{conductor.nombre}}
-                              </option>
-                            </select>
-                        </p>
-                        <p>
-                            <label for="automovil"> Autom&oacute;vil: </label>
-                            <select name="automovil" id="automovil" ng-model="carros">
-                              <option ng-repeat="automovil in catalogo.catalogo[0].catCarros" value="{{automovil.id}}">
-                                {{automovil.placas}}
-                              </option>
-                            </select>
-                        </p>
-                         <p>
-                            <label for="pasajero"> Reportar a: </label>
-                            <select name="pasajero" id="pasajero" ng-model="pasajeros">
-                                <option ng-repeat="pasajero in catalogo.catalogo[0].catPasajeros" value="{{pasajero.id}}">
-                                    {{pasajero.nombre}}
-                                </option>
-                            </select>
-                        </p>
-                </div>
-            
-            </core-card>
-            <paper-toast id="toast1" text="Created by Rabelt Ibarra Godinez"></paper-toast>
-        </core-scaffold>
-        <paper-fab icon="add" onclick="document.querySelector('#toast1').show()"></paper-fab>
-    </body>
+        <core-header-panel navigation flex mode="seamed">
+        <core-toolbar id="core_toolbar">Menu</core-toolbar>
+        
+        </core-header-panel>
+        <div tool>Cars 4er</div>
+        <core-card id="core_card" vertical layout start>
+        <div style="padding: 20px;" data-ng-view="">
+           
+        </div>
+        
+        
+        </core-card>
+</body>
 </html>
