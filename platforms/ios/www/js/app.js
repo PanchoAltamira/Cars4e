@@ -5,7 +5,7 @@ $routeProvider
         templateUrl : 'pages/principal.html',
         controller  : 'ctrlCatalogo'
     })
-     .when('/actividades/:index', {
+     .when('/actividades', {
         templateUrl : 'pages/actividades.html',
         controller  : 'ctrlActivities'
     })

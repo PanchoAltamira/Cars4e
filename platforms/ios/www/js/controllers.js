@@ -8,9 +8,24 @@ myApp.controller('ctrlCatalogo', function($scope, $http){
 	});
 });
 
-myApp.controller('ctrlActivities', function ($scope, $http, $routeParams) {
+myApp.controller('ctrlActivities', function ($scope, $http) {
     $http.get('catalogo.json').success(function (data) {
-		$scope.index = $routeParams.index;
-        $scope.activity = data.catalogo[0].catActividades[$routeParams.index];
+        $scope.length = data.catalogo[0].catActividades.length;
+        if ($scope.index < $scope.length) {
+            $scope.activity = data.catalogo[0].catActividades[$scope.index];
+            $scope.index++;
+        }
     });
+
+    $scope.next = function ()
+    {
+        $http.get('catalogo.json').success(function (data) {
+            $scope.length = data.catalogo[0].catActividades.length;
+            if ($scope.index < $scope.length)
+            {
+                $scope.activity = data.catalogo[0].catActividades[$scope.index];
+                $scope.index++;
+            }
+        });
+    }
 });
