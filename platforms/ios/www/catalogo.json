@@ -1,0 +1,57 @@
+{
+  "catalogo": [
+    {
+      "catConductores": [
+        {
+          "id": 1,
+          "nombre": "Rabelt Ibarra"
+        },
+        {
+          "id": 2,
+          "nombre": "Amait Ibarra"
+        },
+        {
+          "id": 3,
+          "nombre": "Lucifer Ibarra"
+        }
+      ],
+      "catCarros": [
+        {
+          "id": 1,
+          "placas": "JWFXY",
+          "modelo": "2015",
+          "marca": "MERCEDEZ"
+        },
+        {
+          "id": 2,
+          "placas": "RIG89",
+          "modelo": "2007",
+          "marca": "BMW"
+        }
+      ],
+      "catPasajeros": [
+        {
+          "id": 1,
+          "nombre": "Adriana"
+        },
+        {
+          "id": 2,
+          "nombre": "Argelia"
+        }
+      ],
+      "catActividades": [
+        {
+          "id": 1,
+          "actividad": "Revisión de amortiguadores"
+        },
+        {
+          "id": 2,
+          "actividad": "REvisión de neumáticos"
+        }
+      ],
+      "version": 1,
+      "fecha": "26/Septiembre/2015",
+      "email": "soporte@cars4e.com"
+    }
+  ]
+}
