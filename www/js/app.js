@@ -27,5 +27,5 @@ function onPhotoDataSuccess(imageData) {
 }
 
 function onFail(message) {
-    alert('Failed because: ' + message);
+    alert('Failed because:' + message);
 }

@@ -4,7 +4,7 @@ myApp.controller('ctrlCatalogo', function($scope, $http){
 		$scope.conductores = $scope.catalogo.catalogo[0].catCarros;
 		$scope.carros = $scope.catalogo.catalogo[0].catCarros;
 		$scope.pasajeros = $scope.catalogo.catalogo[0].catPasajeros;
-		$scope.message ="MENSAJE";
+		$scope.message ="MENSAJE 1";
 	});
 });
 
