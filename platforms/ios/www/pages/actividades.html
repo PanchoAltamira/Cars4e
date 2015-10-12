@@ -1,14 +1,19 @@
 <div ng-controller="ctrlActivities" ng-init="index=0">
-	<p>Actividades</p>
-	<h1>
-		{{activity.actividad}}
-	</h1>
-    <img style="display:none;width:60px;height:60px;" id="smallImage" src="" />
+	<paper-card heading="Actividad:" >
+		
+		<div class="card-content">
+			<h1>
+			{{activity.actividad}}
+			</h1>
+		</div>
+		<div class="card-actions">
+			<paper-button>
+				¿Es correcta la actividad?
+			</paper-button>
+		</div>
+	</paper-card>
 	<paper-fab icon="check" ng-click="next()" style="background-color: green; right: 20px; bottom: 20px;">
 	</paper-fab>
-	<paper-fab icon="close" style="background-color: red; right: 90px; bottom: 20px;">
+	<paper-fab icon="close" onClick="location.href='#evidencias'" style="background-color: red; right: 90px; bottom: 20px;">
 	</paper-fab>
-    <paper-fab icon="camera" onclick="capturePhoto();" style="background-color: blue; right: 160px; bottom: 20px;">
-    </paper-fab>
 </div>
-	

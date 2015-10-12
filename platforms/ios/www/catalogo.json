@@ -4,15 +4,15 @@
       "catConductores": [
         {
           "id": 1,
-          "nombre": "Rabelt Ibarra"
+          "nombre": "Rabelt Ibarra Godinez"
         },
         {
           "id": 2,
-          "nombre": "Amait Ibarra"
+          "nombre": "Amait Ibarra Nieto"
         },
         {
           "id": 3,
-          "nombre": "Lucifer Ibarra"
+          "nombre": "Juan Manuel Jimenez Cacho"
         }
       ],
       "catCarros": [
@@ -32,11 +32,15 @@
       "catPasajeros": [
         {
           "id": 1,
-          "nombre": "Adriana"
+          "nombre": "Adriana Nieto Antonio"
         },
         {
           "id": 2,
-          "nombre": "Argelia"
+          "nombre": "Argelia Ibarra Godinez"
+        },
+        {
+          "id": 2,
+          "nombre": "Erneto Hugo Sanchez Pliego"
         }
       ],
       "catActividades": [
@@ -46,7 +50,183 @@
         },
         {
           "id": 2,
-          "actividad": "REvisión de neumáticos"
+          "actividad": "Revisión de neumáticos"
+        },
+        {
+          "id": 3,
+          "actividad": "Revisión de frenos"
+        },
+        {
+          "id": 4,
+          "actividad": "Revisión de aceite"
+        },
+        {
+          "id": 5,
+          "actividad": "Revisión de la bateria"
+        },
+        {
+          "id": 6,
+          "actividad": "Revisión de la refrigeración de motor"
+        },
+        {
+          "id": 7,
+          "actividad": "Revisar las luces traceras"
+        },
+        {
+          "id": 8,
+          "actividad": "Revisar las luces de enfrente"
+        },
+        {
+          "id": 9,
+          "actividad": "Verificar las luces de emergencia"
+        },
+        {
+          "id": 10,
+          "actividad": "Verificar filtro de aire"
+        },
+        {
+          "id": 11,
+          "actividad": "Verificar la suspención, encendido e inyección"
+        },
+        {
+          "id": 12,
+          "actividad": "Revisión de gasolina"
+        },
+        {
+          "id": 13,
+          "actividad": "Revisión de la climatización"
+        },
+        {
+          "id": 14,
+          "actividad": "Revisión de los vidrios limpios"
+        },
+        {
+          "id": 15,
+          "actividad": "Retrovisores ajustados"
+        },
+        {
+          "id": 16,
+          "actividad": "Limpiaparabrisas"
+        },
+        {
+          "id": 17,
+          "actividad": "Acondicionamiento interior teniendo pastillas aromatizantes"
+        },
+        {
+          "id": 18,
+          "actividad": "Revisión de los cinturones de seguridad"
+        },
+        {
+          "id": 19,
+          "actividad": "Revisión de exteriores carroceria y chasis"
+        },
+        {
+          "id": 20,
+          "actividad": "Soporte de exterior revisión de llanta de repuesto"
+        },
+        {
+          "id": 21,
+          "actividad": "Aseo de interiores piso, asientos delanteros, traseros"
+        },
+        {
+          "id": 22,
+          "actividad": "Revisión de productos de aseo, cepillo de dientes, loción, cremas, pastillas, chicles-----"
+        },
+        {
+          "id": 23,
+          "actividad": "Verificar si contamos con elementos auxiliares como herramienta básica -----"
+        },
+        {
+          "id": 24,
+          "actividad": "Verificar las rutas de los traslados del día(buscando rutas alternas para un viaje rápido"
+        },
+        {
+          "id": 25,
+          "actividad": "Verificación de docmentación: licencia, tarjeta de circulación, seguro,-------"
+        },
+        {
+          "id": 26,
+          "actividad": "Abrir la puerta cuando vaya a subir el cliente"
+        },
+        {
+          "id": 27,
+          "actividad": "Cerrar la puerta cuando este dentro nuestro cliente"
+        },
+        {
+          "id": 28,
+          "actividad": "Verificar si se cuenta con cargadores de celular"
+        },
+        {
+          "id": 29,
+          "actividad": "Verificar cuanto tiempo va a tardar nuestro cliente en algùn lugar determinado"
+        },
+        {
+          "id": 30,
+          "actividad": "Verificar lugar y hora donde se debe de recoger al cliente"
+        },
+        {
+          "id": 31,
+          "actividad": "Avisar al cliente que ya llego"
+        },
+        {
+          "id": 32,
+          "actividad": "Revisar el coche que no tenga rallones y gopes"
+        },
+        {
+          "id": 33,
+          "actividad": "Revisar que las pilas de los celulares estén cargados"
+        },
+        {
+          "id": 34,
+          "actividad": "Revisar si cuenta con toallas desinfectantes"
+        },
+        {
+          "id": 35,
+          "actividad": "Contar con bolsa de plástico para los mareos"
+        },
+        {
+          "id": 36,
+          "actividad": "Llevar contigo toallas"
+        },
+        {
+          "id": 37,
+          "actividad": "Prevenir un cambio de ropa"
+        },
+        {
+          "id": 38,
+          "actividad": "Llevar aguas purificada"
+        },
+        {
+          "id": 39,
+          "actividad": "Llevar plumas"
+        },
+        {
+          "id": 40,
+          "actividad": "Verificar ubicación de gasolineras"
+        },
+        {
+          "id": 41,
+          "actividad": "Una vez que el cliente este en una junta prevenir nuestro, desayuno y cena"
+        },
+        {
+          "id": 42,
+          "actividad": "Llevar desinfectante"
+        },
+        {
+          "id": 43,
+          "actividad": "Llevar herramientas para cambio de llantas"
+        },
+        {
+          "id": 44,
+          "actividad": "Llevar sombrillas"
+        },
+        {
+          "id": 45,
+          "actividad": "Revisar la bolsa de aire"
+        },
+        {
+          "id": 46,
+          "actividad": "Llevar tarjetas de presentación"
         }
       ],
       "version": 1,
